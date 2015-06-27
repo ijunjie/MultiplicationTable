@@ -49,7 +49,3 @@ var mymodule = (function (module) {
 }) ({});
 var table = new mymodule.MultiplicationTable(8);
 console.log(table.toString());
-/*
-Exception: TypeError: mymodule.MultiplicationTable is not a constructor
-@Scratchpad/1:50:13
-*/
