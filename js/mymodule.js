@@ -3,7 +3,7 @@ var junjie = (function () {
     if (arguments.length > 1) {
       throw 'Only one argument expected!';
     } else {
-      rowCountArg = rowCountArg || 9;
+      var rowCountArg = rowCountArg || 9;
       if (rowCountArg.constructor != Number) {
         throw 'Illegal argument type!';
       } else {
