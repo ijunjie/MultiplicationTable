@@ -13,10 +13,7 @@ class MutltiplicationTable:
     @staticmethod
     def __table_str(row_count):
         row_str_list = list(MutltiplicationTable.__table_generator(row_count))
-        table_str = ''
-        for row_str in row_str_list:
-            table_str += row_str + '\r\n'
-        return table_str
+        return '\r\n'.join(row_str_list)
 
     @staticmethod
     def __table_generator(row_count):
@@ -27,10 +24,7 @@ class MutltiplicationTable:
     @staticmethod
     def __row_str(row_index):
         ele_list = list(MutltiplicationTable.__row_generator(row_index))
-        row_str = ''
-        for ele in ele_list:
-            row_str += ele + '\t'
-        return row_str
+        return '\t'.join(ele_list)
 
     @staticmethod
     def __row_generator(row_index):
